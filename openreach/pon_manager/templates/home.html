@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1> Home Page </h1>
+<a href="{% url 'index' %}">Go Home</a><p/>
+
+{% for item in all_items %}
+    <strong>Llums ID: {{ item.PONProjectID}} 1141:{{item.MDFID}}</strong><br/>
+    Exchange: {{item.Exchange}} Pon: {{item.PONNumber}}<br/>
+    <hr>
+{% endfor %}
+
+{% endblock %}
+
