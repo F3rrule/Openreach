@@ -9,6 +9,6 @@ class Table(models.Model):
     PONNumber = models.CharField(max_length=15)
     
     def __str__(self):
-        return self.Exchange +' '+ self.PONNumber
+        return self.Exchange
     
 

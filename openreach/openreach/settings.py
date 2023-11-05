@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'import_export',
     'pon_manager',
     'rest_framework',
+    'corsheaders',
            
    ]
 
@@ -53,7 +54,14 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-]
+    'corsheaders.middleware.CorsMiddleware',
+ ]
+
+REST_FRAMEWORK = {'DEFAULT-PERMISSION_CLASSES': [
+    'rest_framework.permission.AllowAny']}
+
+CORS_ORIGIN_ALLOW_ALL = True
+
 
 ROOT_URLCONF = 'openreach.urls'
 
@@ -132,6 +140,6 @@ MEDIA_URL = '/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-FILE_UPLOAD_HANDLERS = ("django_excel.ExcelMemoryFileUploadHandler",
-                        "django_excel.TemporaryExcelFileUploadHandler")
+#FILE_UPLOAD_HANDLERS = ("django_excel.ExcelMemoryFileUploadHandler",
+#                        "django_excel.TemporaryExcelFileUploadHandler")
 
