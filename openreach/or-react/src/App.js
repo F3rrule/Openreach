@@ -1,15 +1,15 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import NavigationBar from './NavigatinBar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './Pages/home';
-import Dependency from './Pages/dependency';
-import DFE from './Pages/DFE';
-import PonManager from './Pages/pon_manager';
-import Glide from './Pages/glide';
-import PolesCivils from './Pages/poles_civils';
-import EstimateSearch from './Pages/estimate_search';
-import MissEstimates from './Pages/miss_estimates';
+import Home from './home';
+import Dependency from './dependency';
+import DFE from './DFE';
+import PonManager from './pon_manager';
+import Glide from './glide';
+import PolesCivils from './poles_civils';
+import EstimateSearch from './estimate_search';
+import MissEstimates from './miss_estimates';
+import NavigationBar from './NavigationBar';
 
 function App() {
   return (

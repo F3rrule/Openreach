@@ -1,5 +1,5 @@
 import React from 'react'
-import "./App.css";
+//import "./src/App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import logo from './images/OR_logo.jpg'
@@ -19,8 +19,8 @@ function NavigationBar() {
             <img
               alt=""
               src={logo}
-            width="50px"
-            height="50px"
+              width="50px"
+              height="50px"
             className="d-inline-block align-middle"
           />{" "}
           <b>PON Management Software</b>
