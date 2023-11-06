@@ -8,6 +8,7 @@ class Table(models.Model):
     Exchange = models.CharField(max_length=50)
     PONNumber = models.CharField(max_length=15)
     
+
     def __str__(self):
         return self.Exchange
     
