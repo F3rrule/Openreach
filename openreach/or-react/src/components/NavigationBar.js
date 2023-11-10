@@ -1,8 +1,6 @@
 import React from 'react'
-//import "./src/App.css";
-import "bootstrap/dist/css/bootstrap.css";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
-import logo from './images/OR_logo.jpg'
+import logo from '../images/OR_logo.jpg'
 
 function NavigationBar() {
   return (
@@ -10,7 +8,7 @@ function NavigationBar() {
       <Navbar
         bg="navbarColour"
         variant="dark"
-        fixed="top"
+        sticky="top"
         expand="lg"
         collapseOnSelect
       >

@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bg-navbarColour{
+  background-color:rgb(40, 50, 98);  
+}
+
